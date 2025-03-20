@@ -1,0 +1,198 @@
+create a folder named as frontend
+>>cd frontend
+>> npx create-react-app first-app
+>>cd first-app
+>>npm start
+
+for unauthorised command
+>>Get-ExecutionPolicy RemoteSigned-Scope currentuser
+
+MERN->mongodb,ExpressJS,ReactJs,NodeJS
+In public folder->favicon.ico->logo
+In src->through src everything will be sent to index.html
+partial web application -> no data will be stord only framework will be working fine
+
+what is difference between logo192 and logo512?
+in manifest.json
+ {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+    it basically says about logo and its size
+
+    Deployment of frontend in VERCEL
+    basically for python deployment we make use of RENDER
+
+Brief Idea:backend
+installing dependencies:
+PS C:\Users\student\Desktop\React> cd backend
+PS C:\Users\student\Desktop\React\backend> npm install dotenv cors express decrypt moongoose
+->config: its used for connecting the mongodb
+    cluster name=>first-app
+    username:vvce22cse0089
+    password:hYLaptaGsGI52mVb
+    -create database user
+    -proceed to connect
+    -select drivers
+    -copy the code:
+    mongodb+srv://vvce22cse0089:<db_password>@first-app.yig0h.mongodb.net/?retryWrites=true&w=majority&appName=first-app
+    mongodb cant be storing images so we make use of called cloudinary
+
+
+->controller:it mains look after the functionality
+
+->routes:link will be added through this
+
+    
+->models
+
+
+->Index.js
+localhost:3000
+
+
+->.env:basically where the uri will be stored
+
+->example in instagram :the profile photo and stories everything is pages
+
+react native:mobile application
+electron
+
+react(rafce->enter)
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default App
+this is inbuilt function
+
+same thing will be done to get the basic code
+we can install the react-icons 
+>> npm i install react-icons
+check it before installing in package.json
+react-router-dom:its used for linking
+npm install react-router-dom
+what is redux?
+it used to store the state of a website
+
+example:
+const port=process.env.port||8080 
+if we mention the port number in .env then it uses that port number if its not mention it will be running in that port it is called fallback method
+this can be done using figma using the plugin called Builder.ico
+
+unidirectional dataflow:
+parent-child:
+props:
+redux:
+tailwind css:
+figma:
+
+
+1.Unidirectional Data Flow
+Unidirectional data flow is a core principle in React. It means that data in React apps flows in one direction:
+ from parent components to child components.
+
+Parent to Child:The parent component passes data down to child components through props. The child component cannot
+modify the data it receives, but it can request changes by calling a function passed down from the parent.
+State Management:React's state is also managed in a unidirectional flow, typically starting from the top of 
+the component tree and flowing down to children. Changes to state in parent components may trigger re-renders 
+in child components.
+
+2. Parent-Child Relationship in React (Props)
+In React, props (short for properties) are how data is passed from a parent component to its child components.
+
+Parent to Child: When you want to share data or behavior from a parent component to a child, you do so via props.
+  
+Example:
+```jsx
+const Parent = () => {
+  const message = "Hello from Parent!";
+  return <Child message={message} />;
+};
+
+const Child = ({ message }) => {
+  return <p>{message}</p>;
+};
+```
+
+Here, `Parent` passes a prop (`message`) to `Child`, and `Child` can access it to render the message.
+
+3. Redux:
+Redux is a state management library that helps you manage and centralize the state of your application.
+
+ Global State: Redux enables you to manage state in a single, global store. Instead of passing data down through
+ props from parent to child, components can directly access or dispatch actions to update the global state.
+Actions and Reducers: Redux uses actionsto describe state changes and reducers to handle those changes.
+  
+Example:
+jsx
+// Actions
+const increment = () => ({ type: 'INCREMENT' });
+
+// Reducer
+const counterReducer = (state = 0, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    default:
+      return state;
+  }
+};
+
+
+Redux can be used with React via `react-redux` to allow components to subscribe to store updates.
+
+4. Tailwind CSS:
+Tailwind CSS is a utility-first CSS framework for creating custom designs without writing custom CSS styles.
+
+Utility Classes: Tailwind CSS provides low-level utility classes (e.g., `text-center`, `bg-blue-500`, `p-4`) that you can use to compose custom designs directly in your JSX or HTML.
+Customization: You can customize Tailwind’s design system (e.g., colors, spacing) by modifying the `tailwind.config.js` file.
+  
+Example:
+```jsx
+const Button = () => {
+  return <button className="bg-blue-500 text-white p-2 rounded">Click Me</button>;
+};
+
+
+5. Figma:
+Figma is a collaborative web-based design tool used for designing user interfaces and user experiences.
+
+UI/UX Design: It allows designers to create layouts, components, and interactions without writing code.
+Collaboration: Figma is known for its real-time collaboration features, allowing teams to design and prototype together.
+Export for Developers: Designers can export assets (like icons and images) and even code snippets to help developers implement the design.
+
+In the context of React development, Figma can help you design components visually and provide developers with the necessary design assets for implementation.
+
+20/03/2024-session 1 and session 2
+
+installation
+structure
+mongodb
+routes icons installation
+creation of files
+path and navigation(how path is imported)
+redux
+
+inline styling
+eventhandler
+event dispatcher
+useselect 
+use dispatch
+select props
+
+
+unidirectional dataflow:
+parent->child
